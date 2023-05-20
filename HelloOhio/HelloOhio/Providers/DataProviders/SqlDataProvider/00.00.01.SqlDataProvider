@@ -41,17 +41,17 @@ CREATE TABLE {databaseOwner}{objectQualifier}Lemezek
         [LemezID] INT NOT NULL IDENTITY (1, 1)
                 CONSTRAINT [PK_Lemezek] PRIMARY KEY CLUSTERED,
 
-        [cim] NVARCHAR(1024),
-        [eloado] NVARCHAR(1024),
-        [kiadaseve] INT,
-        [kiadoneve] NVARCHAR(1024),
-        [allapot] NVARCHAR(1024),
+        [Cim] NVARCHAR(1024),
+        [Eloado] NVARCHAR(1024),
+        [Kiadaseve] INT,
+        [Kiadoneve] NVARCHAR(1024),
+        [Allapot] NVARCHAR(1024),
         
     )  ON [PRIMARY]
 GO
 
 INSERT INTO [TestFlightPlans] (
-	[cim], [eloado], [kiadaseve], [kiadoneve], [allapot]
+	[Cim], [Eloado], [Kiadaseve], [Kiadoneve], [Allapot]
 	) VALUES
 	('Tesztegy', 'EloadoEgy', 2001, 'kesz'),
 	('Tesztketto','EloadoKetto', 2002, 'kesz'),
