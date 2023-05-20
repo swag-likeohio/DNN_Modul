@@ -14,7 +14,7 @@ namespace HelloOhio.HelloOhio.Models
         [PrimaryKey(nameof(LemezID), AutoIncrement = true)]
         [Cacheable("Lemezek", CacheItemPriority.Default, 20)]
         [Scope("ModuleId")]
-        public class Lemezek
+        public class Lemez
         {
             public int LemezID { get; set; }
 
