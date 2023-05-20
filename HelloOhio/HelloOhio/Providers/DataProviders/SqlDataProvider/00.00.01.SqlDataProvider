@@ -36,6 +36,31 @@ ALTER TABLE {databaseOwner}{objectQualifier}HelloOhio_Items ADD CONSTRAINT
 
 GO
 
+CREATE TABLE {databaseOwner}{objectQualifier}Lemezek
+    (
+        [LemezID] INT NOT NULL IDENTITY (1, 1)
+                CONSTRAINT [PK_Lemezek] PRIMARY KEY CLUSTERED,
+
+        [cim] NVARCHAR(1024),
+        [eloado] NVARCHAR(1024),
+        [kiadaseve] INT,
+        [kiadoneve] NVARCHAR(1024),
+        [allapot] NVARCHAR(1024),
+        
+    )  ON [PRIMARY]
+GO
+
+INSERT INTO [TestFlightPlans] (
+	[cim], [eloado], [kiadaseve], [kiadoneve], [allapot]
+	) VALUES
+	('Tesztegy', 'EloadoEgy', 2001, 'kesz'),
+	('Tesztketto','EloadoKetto', 2002, 'kesz'),
+	('Tesztharom','EloadoHarom', 2003, 'kesz'),
+	('Tesztnegy', 'EloadoNegy', 2004, 'nemkesz'),
+	('Tesztot', 'EloadoOt', 2005, 'nemkesz');
+GO
+
+
 
 /************************************************************/
 /*****              SqlDataProvider                     *****/
