@@ -1,9 +1,24 @@
-﻿@inherits DotNetNuke.Web.Mvc.Framework.DnnWebViewPage<IEnumerable< HelloOhio.HelloOhio.Models.Item >>
+﻿@inherits DotNetNuke.Web.Mvc.Framework.DnnWebViewPage<IEnumerable<HelloOhio.HelloOhio.Models.Item>>
 
 @using System.Text.RegularExpressions
 @using DotNetNuke.Web.Mvc.Helpers
 
 
-<div>
-Hello World, Hello Ohio, Hello Git!!!
-</div>
+<h2>Lemez Adatok:</h2>
+<form action="/action_page.php">
+
+    <label for="Cim">A lemez cime:</label>
+    <input type="text" id="Cim" name="Cim"><br><br>
+
+    <label for="Eloado">Az előadó:</label>
+    <input type="text" id="Eloado" name="Eloado"><br><br>
+
+    <label for="Kiadaseve">Kiadás éve:</label>
+    <input type="number" id="Kiadaseve" name="Kiadaseve"><br><br>
+
+    <label for="Kiadoneve">Kiadó neve:</label>
+    <input type="text" id="Kiadoneve" name="Kiadoneve"><br><br>
+
+    <input type="submit" value="Mentés">
+
+</form>
