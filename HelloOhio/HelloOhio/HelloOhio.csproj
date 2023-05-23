@@ -158,9 +158,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Lemezek\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -168,6 +166,7 @@
     <Content Include="Views\Item\Index.cshtml" />
     <Content Include="Views\Item\Edit.cshtml" />
     <Content Include="Views\Settings\Settings.cshtml" />
+    <Content Include="Views\Lemezek\LemeAdatok.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
