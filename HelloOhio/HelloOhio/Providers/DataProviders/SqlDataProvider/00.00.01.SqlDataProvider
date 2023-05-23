@@ -50,7 +50,7 @@ CREATE TABLE {databaseOwner}{objectQualifier}Lemezek
     )  ON [PRIMARY]
 GO
 
-INSERT INTO [TestFlightPlans] (
+INSERT INTO [Lemezek] (
 	[Cim], [Eloado], [Kiadaseve], [Kiadoneve], [Allapot]
 	) VALUES
 	('Tesztegy', 'EloadoEgy', 2001, 'kesz'),
